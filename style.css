@@ -1,0 +1,306 @@
+:root {
+  --header-footer: #a8df9d;
+  --buttons: #247459;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(/images/sugarcane.jpg);
+  background-repeat: no-repeat;
+  background-size: 4500px;
+}
+p {
+  text-align: justify;
+}
+
+/*---HEADER------------------------------------------------*/
+header {
+  height: 105px;
+  background-image: linear-gradient(10deg, #a8df9d, rgb(88, 145, 76));
+  padding: 50x;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.425);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-left: 26%;
+  z-index: 1000;
+}
+
+@media (max-width: 1440px) {
+  header {
+    padding-left: 20%;
+  }
+}
+
+@media (max-width: 1366px) {
+  header {
+    padding-left: 18%;
+  }
+}
+
+@media (max-width: 1024px) {
+  header {
+    padding-left: 8%;
+  }
+}
+
+.img-title {
+  width: 100px;
+  height: 100px;
+}
+
+#logo {
+  display: inline-block;
+  font-size: 70px;
+  position: absolute;
+}
+
+#logo a {
+  text-decoration: none;
+  color: black;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+#menu {
+  display: inline-block;
+  position: absolute;
+  margin-left: 350px;
+  margin-top: 48px;
+}
+
+#menu ul li {
+  display: inline;
+}
+
+#menu ul li a {
+  padding: 2px 10px;
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  border-radius: 12px;
+  transition: 0.4s;
+}
+
+#menu ul li a:hover {
+  background-color: var(--buttons);
+}
+
+/*---MAIN------------------------------------------------*/
+
+#culture {
+  width: 100%;
+  height: 120px;
+}
+
+main {
+  margin: auto;
+  width: 1000px;
+  background-color: #f5f5f5;
+  padding: 20px 50px;
+  max-width: 1366px;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  text-indent: 22px;
+  padding-bottom: 70px;
+}
+
+#cultura h1 {
+  font-family: Poppins light, Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  text-indent: 22px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+#cultura p {
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  text-indent: 22px;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+.imagem {
+  width: 70%;
+  margin: auto;
+}
+
+.imagem img {
+  display: block;
+  margin: 30px auto;
+  border-radius: 10px;
+  max-width: 100%;
+  -moz-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  z-index: 1px;
+}
+
+.imagem:hover img {
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.1);
+  z-index: 1px;
+}
+
+#secundaria h1 {
+  text-align: center;
+}
+
+#derivadoscana {
+  line-height: 40px;
+}
+
+#secundaria p {
+  margin-top: 20px;
+}
+
+#secundaria iframe {
+  margin: 30px 100px;
+}
+
+#cultivo h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+#cultivo p {
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+#cultivo .fotos img {
+  width: 400px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+#back-to-top {
+  position: absolute;
+  left: 75%;
+  border-radius: 50%;
+  box-shadow: none;
+  background-color: var(--header-footer);
+  border-color: black;
+  cursor: pointer;
+  z-index: 10px;
+}
+
+@media (max-width: 1440px) {
+  #back-to-top {
+    left: 83.75%;
+  }
+}
+
+@media (max-width: 1366px) {
+  #back-to-top {
+    left: 85.6%;
+  }
+}
+
+@media (max-width: 1024px) {
+  #back-to-top {
+    left: 97%;
+  }
+}
+
+#back-to-top:hover {
+  background-color: var(--buttons);
+}
+
+/*---FOOTER------------------------------------------------*/
+
+footer {
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  margin: auto;
+  background-image: linear-gradient(140deg, #a8df9d, rgb(100, 136, 93));
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  box-shadow: -1px -2px 2px rgba(0, 0, 0, 0.425);
+  height: 190px;
+}
+
+footer h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.zap {
+  width: auto;
+  background-color: #25d366;
+  border-radius: 10px;
+  padding: 5px;
+  border-color: black;
+  transition: 1s;
+}
+
+.zap:hover {
+  animation: pulsate 0.5s ease-in-out;
+  background-color: #25d366;
+}
+
+@keyframes pulsate {
+  0% {
+    box-shadow: 0 0 15px #a5e998, 0 0 30px #3eb825;
+  }
+}
+
+.zap img {
+  width: 25px;
+  height: 25px;
+}
+
+.zap a {
+  text-decoration: none;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 25px;
+}
+
+#contatos {
+  display: inline-block;
+}
+
+#email_rodape {
+  display: block;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 10px;
+  font-size: 20px;
+  width: 80px;
+  padding: 2px 5px;
+  border-radius: 8px;
+}
+#email_rodape:hover {
+  background-color: var(--buttons);
+}
+
+#integrantes {
+  position: absolute;
+  display: inline-block;
+  margin-left: 40px;
+}
+
+#integrantes ul li {
+  list-style-type: none;
+}
+
+#integrantes h1 {
+  margin-bottom: 3px;
+}
+
+.unip {
+  width: 200px;
+  float: right;
+  margin-top: 90px;
+  margin-right: 10px;
+}
