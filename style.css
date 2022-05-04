@@ -30,7 +30,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding-left: 26%;
+  padding-left: 27%;
   z-index: 1000;
 }
 
@@ -187,7 +187,7 @@ main {
   left: 75%;
   border-radius: 50%;
   box-shadow: none;
-  background-color: var(--header-footer);
+  background-color: rgb(103, 165, 103);
   border-color: black;
   cursor: pointer;
   z-index: 10px;
@@ -245,13 +245,13 @@ footer h1 {
 }
 
 .zap:hover {
-  animation: pulsate 0.5s ease-in-out;
+  animation: pulsate 1s ease-in-out;
   background-color: #25d366;
 }
 
 @keyframes pulsate {
   0% {
-    box-shadow: 0 0 15px #a5e998, 0 0 40px #236416;
+    box-shadow: 0 0 15px #a5e998, 0 0 30px #236416;
   }
 }
 
