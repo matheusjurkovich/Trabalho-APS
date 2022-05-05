@@ -5,16 +5,31 @@ btn.addEventListener('click', function () {
 
 ScrollReveal({
   origin: 'bottom',
-  distance: '30px',
+  distance: '40px',
   duration: 700
 }).reveal(`
   #cultura,
-  #cultura #principal img,
+  .imagem,
   #secundaria,
   #secundaria iframe,
   #cultivo,
   #cultivo p,
+  .fotos,
   #contatos,
   .zap,
   #integrantes,
   .unip`)
+
+const header = document.querySelector('#page-header')
+const headerClassList = header.classList
+window.addEventListener('scroll', () => {
+  if (window.scrollY >= 80) {
+    if (!headerClassList.contains('scrollHide')) {
+      headerClassList.add('scrollHide')
+    }
+  } else {
+    if (headerClassList.contains('scrollHide')) {
+      headerClassList.remove('scrollHide')
+    }
+  }
+})

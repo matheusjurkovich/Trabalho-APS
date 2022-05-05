@@ -32,6 +32,12 @@ header {
   width: 100%;
   padding-left: 27%;
   z-index: 1000;
+  transition: 0.3s;
+}
+
+#page-header.scrollHide {
+  opacity: 0;
+  transition: 0.3s;
 }
 
 @media (max-width: 1440px) {
@@ -146,7 +152,7 @@ main {
 .imagem:hover img {
   -moz-transform: scale(1.2);
   -webkit-transform: scale(1.2);
-  transform: scale(1.1);
+  transform: scale(1.05);
   z-index: 1px;
 }
 
