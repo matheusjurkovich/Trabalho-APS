@@ -12,9 +12,10 @@
 }
 
 body {
-  background-image: url(./images/muitacana.jpg);
+  background-image: url(./images/plano-de-fundo.jpg);
   background-repeat: no-repeat;
-  background-size: 7900px;
+  background-size: cover;
+  background-position: right;
 }
 p {
   text-align: justify;
@@ -30,7 +31,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding-left: 23%;
+  padding-left: 29%;
   z-index: 1000;
   transition: 0.3s;
 }
@@ -42,19 +43,19 @@ header {
 
 @media (max-width: 1440px) {
   header {
-    padding-left: 13%;
+    padding-left: 21%;
   }
 }
 
 @media (max-width: 1366px) {
   header {
-    padding-left: 12%;
+    padding-left: 19%;
   }
 }
 
 @media (max-width: 1024px) {
   header {
-    padding-left: 8%;
+    padding-left: 10%;
   }
 }
 
@@ -84,7 +85,7 @@ header {
 
 @media (max-width: 1024px) {
   #menu {
-    top: -20px;
+    top: -10px;
   }
 }
 
@@ -176,7 +177,7 @@ main {
 #cultivo h1 {
   font-size: 30px;
   margin-bottom: 10px;
-  text-align: right;
+  text-indent: 0px;
 }
 
 #cultivo p {
@@ -187,21 +188,7 @@ main {
 #cultivo .fotos img {
   width: 400px;
   border-radius: 12px;
-  margin-top: 20px;
-}
-
-#agropecuaria {
-  margin-top: 20px;
-}
-
-#agropecuaria h1 {
-  font-size: 30px;
-  text-indent: 0;
-  margin-bottom: 12px;
-}
-
-#agropecuaria p {
-  text-indent: 20px;
+  margin: 20px 0;
 }
 
 .lado-a-lado {
@@ -285,7 +272,7 @@ footer {
   padding-left: 10px;
   padding-bottom: 20px;
   margin: auto;
-  background-image: linear-gradient(140deg, #a8df9d, rgb(100, 136, 93));
+  background-image: linear-gradient(140deg, #95d489, rgb(70, 99, 65));
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-weight: 400;
   box-shadow: -1px -2px 2px rgba(0, 0, 0, 0.425);
