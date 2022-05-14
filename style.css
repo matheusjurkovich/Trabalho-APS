@@ -41,6 +41,12 @@ header {
   transition: 0.3s;
 }
 
+@media (max-width: 1600px) {
+  header {
+    padding-left: 24%;
+  }
+}
+
 @media (max-width: 1440px) {
   header {
     padding-left: 21%;
@@ -116,10 +122,9 @@ header {
 
 main {
   margin: auto;
-  width: 1000px;
+  width: 60vw;
   background-color: #f5f5f5;
   padding: 20px 50px;
-  max-width: 1366px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   text-indent: 22px;
   padding-bottom: 70px;
@@ -170,8 +175,11 @@ main {
   margin-top: 20px;
 }
 
-#secundaria iframe {
-  margin: 30px 100px;
+#video {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+  width: 50vw;
 }
 
 #cultivo h1 {
@@ -185,10 +193,16 @@ main {
   margin-bottom: 10px;
 }
 
-#cultivo .fotos img {
-  width: 400px;
+.fotos {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 30px 0;
+}
+
+.fotos img {
   border-radius: 12px;
-  margin: 20px 0;
+  width: 23vw;
 }
 
 .lado-a-lado {
@@ -196,7 +210,7 @@ main {
 }
 
 .lado-a-lado img {
-  width: 450px;
+  width: 26vw;
   margin: 16px;
   border-radius: 12px;
 }
@@ -228,13 +242,13 @@ main {
 }
 
 .lua img {
-  width: 400px;
+  width: 23vw;
   border-radius: 12px;
 }
 
 #back-to-top {
   position: absolute;
-  left: 75%;
+  left: 78.3vw;
   border-radius: 50%;
   box-shadow: none;
   background-color: rgb(103, 165, 103);
@@ -243,21 +257,27 @@ main {
   z-index: 10px;
 }
 
+@media (max-width: 1600px) {
+  #back-to-top {
+    left: 77.8vw;
+  }
+}
+
 @media (max-width: 1440px) {
   #back-to-top {
-    left: 83.75%;
+    left: 77.4vw;
   }
 }
 
 @media (max-width: 1366px) {
   #back-to-top {
-    left: 85.6%;
+    left: 77.4vw;
   }
 }
 
 @media (max-width: 1024px) {
   #back-to-top {
-    left: 97%;
+    left: 76.5vw;
   }
 }
 
