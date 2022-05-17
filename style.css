@@ -31,7 +31,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding-left: 29%;
+  padding-left: 26%;
   z-index: 1000;
   transition: 0.3s;
 }
@@ -43,25 +43,25 @@ header {
 
 @media (max-width: 1600px) {
   header {
-    padding-left: 24%;
+    padding-left: 19.5%;
   }
 }
 
 @media (max-width: 1440px) {
   header {
-    padding-left: 21%;
+    padding-left: 16%;
   }
 }
 
 @media (max-width: 1366px) {
   header {
-    padding-left: 19%;
+    padding-left: 13%;
   }
 }
 
 @media (max-width: 1024px) {
   header {
-    padding-left: 10%;
+    padding-left: 11%;
   }
 }
 
@@ -100,7 +100,7 @@ header {
 }
 
 #menu ul li a {
-  padding: 2px 10px;
+  padding: 4px 15px;
   color: black;
   text-decoration: none;
   font-family: Poppins, Arial, Helvetica, sans-serif;
@@ -215,6 +215,12 @@ main {
   border-radius: 12px;
 }
 
+#agua h1 {
+  font-size: 30px;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+}
+
 #calendario {
   margin-top: 30px;
 }
@@ -234,6 +240,9 @@ main {
 #calendario h3 {
   font-size: 18px;
   text-indent: 0px;
+}
+#lunar {
+  padding-top: 1em;
 }
 
 .lua {
