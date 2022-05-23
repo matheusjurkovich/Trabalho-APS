@@ -32,14 +32,17 @@ ScrollReveal({
 
 const header = document.querySelector('#page-header')
 const headerClassList = header.classList
+const btnClassList = btn.classList
 window.addEventListener('scroll', () => {
   if (window.scrollY >= 80) {
     if (!headerClassList.contains('scrollHide')) {
       headerClassList.add('scrollHide')
+      btnClassList.remove('hide')
     }
   } else {
     if (headerClassList.contains('scrollHide')) {
       headerClassList.remove('scrollHide')
     }
+    btnClassList.add('hide')
   }
 })

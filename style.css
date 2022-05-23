@@ -256,7 +256,8 @@ main {
 }
 
 #back-to-top {
-  position: absolute;
+  position: fixed;
+  bottom: 10px;
   left: 78.3vw;
   border-radius: 50%;
   box-shadow: none;
@@ -264,6 +265,12 @@ main {
   border-color: black;
   cursor: pointer;
   z-index: 10px;
+  transition: 0.5s;
+}
+
+.hide {
+  opacity: 0;
+  transition: 0.5s;
 }
 
 @media (max-width: 1600px) {
