@@ -256,6 +256,7 @@ main {
 }
 
 #back-to-top {
+  z-index: 5px;
   position: fixed;
   bottom: 10px;
   left: 78.3vw;
@@ -264,7 +265,6 @@ main {
   background-color: rgb(103, 165, 103);
   border-color: black;
   cursor: pointer;
-  z-index: 10px;
   transition: 0.5s;
 }
 
@@ -304,6 +304,7 @@ main {
 /*---FOOTER------------------------------------------------*/
 
 footer {
+  z-index: 6px;
   padding-top: 20px;
   padding-left: 10px;
   padding-bottom: 20px;
