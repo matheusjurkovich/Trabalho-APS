@@ -143,7 +143,7 @@ main {
   padding: 20px 50px;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   text-indent: 22px;
-  padding-bottom: 70px;
+  padding-bottom: 10px;
   line-height: 30px;
 }
 
@@ -272,9 +272,8 @@ main {
 }
 
 #back-to-top {
-  z-index: 5px;
   position: sticky;
-  left: 78.3vw;
+  bottom: 10px;
   border-radius: 50%;
   box-shadow: none;
   background-color: rgb(103, 165, 103);
